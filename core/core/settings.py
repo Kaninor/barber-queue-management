@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'barbers',
     'personnels',
+    'generals'
 ]
 
 MIDDLEWARE = [

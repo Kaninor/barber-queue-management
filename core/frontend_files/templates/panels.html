@@ -1,0 +1,21 @@
+{% extends 'layouts/app.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Panels</title>
+{% endblock %}
+
+{% block body %}
+    <div class="panel-items-container">
+        <div class="c1">
+            <img class="panel-item" src="{% static 'images/barber.png' %}"> 
+            <img class="panel-item" src="{% static 'images/employee.png' %}"> 
+        </div>
+        <div class="c2">
+            <ul>
+                <li><a href="/panel/barber">پنل آرایشگر</a></li>
+                <li><a href="/panel/personnel">پنل پرسنل</a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
