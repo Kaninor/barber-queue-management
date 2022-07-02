@@ -1,0 +1,114 @@
+{% extends 'layouts/app.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Barber Panel</title>
+{% endblock %}
+
+{% block body %}
+    <div class="info-container">
+        <div class="barber-panel-info-container">
+            <div class="img-container">
+                <img class="img" src="{% static 'images/barber.png' %}"> 
+                <img class="img" src="{% static 'images/employee.png' %}"> 
+            </div>
+            <div class="emp-info-container">
+                <ul>
+                    <li>نام : داریوش</li>
+                    <li>نام خانوادگی : روحی فرد</li>
+                    <li>کد : 2222222222223333</li>
+                </ul>
+                <ul>
+                    <li>نام : داریوش</li>
+                    <li>نام خانوادگی : روحی فرد</li>
+                    <li>کد : 2222222222223333</li>
+                </ul>
+            </div>
+            <div class="actions-container">
+                <div>
+                    <button class="b1" id="b1">شروع اصلاح مو</button>
+                    <button class="b2" id="b2">اتمام اصلاح مو</button>
+                </div>
+                <span id="time">00:00:00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="waiting-table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>کد پرسنل</th>
+                    <th>نام پرسنل</th>
+                    <th>کد آرایشگر</th>
+                    <th>نام آرایشگر</th>
+                    <th>تاریخ</th>
+                    <!-- <th>#</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <th>2222222222222222</th>
+                    <th>داریوش روحی فرد</th>
+                    <th>2222222222222222</th>
+                    <th>علی ضیایی</th>
+                    <th>2/7/2022</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>2222222222222222</th>
+                    <th>داریوش روحی فرد</th>
+                    <th>2222222222222222</th>
+                    <th>علی ضیایی</th>
+                    <th>2/7/2022</th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>2222222222222222</th>
+                    <th>داریوش روحی فرد</th>
+                    <th>2222222222222222</th>
+                    <th>علی ضیایی</th>
+                    <th>2/7/2022</th>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <th>2222222222222222</th>
+                    <th>داریوش روحی فرد</th>
+                    <th>2222222222222222</th>
+                    <th>علی ضیایی</th>
+                    <th>2/7/2022</th>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <th>2222222222222222</th>
+                    <th>داریوش روحی فرد</th>
+                    <th>2222222222222222</th>
+                    <th>علی ضیایی</th>
+                    <th>2/7/2022</th>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <th>2222222222222222</th>
+                    <th>داریوش روحی فرد</th>
+                    <th>2222222222222222</th>
+                    <th>علی ضیایی</th>
+                    <th>2/7/2022</th>
+                </tr>
+                <tr>
+                    <th>7</th>
+                    <th>2222222222222222</th>
+                    <th>داریوش روحی فرد</th>
+                    <th>2222222222222222</th>
+                    <th>علی ضیایی</th>
+                    <th>2/7/2022</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'statics/js/timer.js' %}"></script>
+{% endblock %}

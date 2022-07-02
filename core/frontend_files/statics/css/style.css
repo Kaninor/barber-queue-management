@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: bold;
+    src: url('/static/fonts/Vazir-Bold.eot');
+    src: url('/static/fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'), 
+    url('/static/fonts/Vazir-Bold.woff2') format('woff2'), 
+    url('/static/fonts/Vazir-Bold.woff') format('woff'), 
+    url('/static/fonts/Vazir-Bold.ttf') format('truetype');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Vazir', Arial, sans-serif;
+    background-color: rgb(111, 184, 233);
+}
+
+.barber-panel-info-container {
+    width: 800px;
+    height: 360px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.info-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+nav {
+    background-color: rgb(51, 80, 117);
+    direction: rtl;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav a {
+    font-size: 18px;
+    color: white;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 20px 110px;
+}
+
+.img-container img {
+    width: 100px;
+    width: 100px;
+}
+
+.emp-info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.emp-info-container ul {
+    list-style: none;
+    margin-right: 20px;
+    margin-left: 30px;
+    direction: rtl;
+}
+
+.actions-container {
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions-container .b1 {
+    width: 200px;
+    height: 45px;
+    border-radius: 12px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-right: 55px;
+    font-family: 'Vazir', Arial, sans-serif;
+    border: none;
+}
+
+.actions-container .b2 {
+    width: 200px;
+    height: 45px;
+    border-radius: 12px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-right: 55px;
+    font-family: 'Vazir', Arial, sans-serif;
+    border: none;
+    margin-right: 15px;
+}
+
+.actions-container .b1:hover {
+    background-color: rgb(84, 167, 59);
+    cursor: pointer;
+}
+
+.actions-container .b2:hover {
+    background-color: rgb(213, 100, 100);
+    cursor: pointer;
+}
+
+.actions-container span {
+    margin-top: 26px;
+    margin-left: 28px;
+    font-size: 30px;
+}
+
+.waiting-table-container {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.waiting-table-container table {
+    direction: rtl;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-radius: 12px;
+    box-shadow: 2px 2px 20px 6px #666;
+    overflow: hidden;
+}
+
+.waiting-table-container thead {
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+.waiting-table-container thead th {
+    padding-right: 11px;
+}
+
+.waiting-table-container tbody th {
+    padding-right: 11px;
+    background-color: rgb(246, 246, 246);
+}
+
+.waiting-table-container thead,tbody th {
+    height: 43px;
+}
+
+.waiting-table-container tbody th {
+    border-bottom: 1px solid black;
+}

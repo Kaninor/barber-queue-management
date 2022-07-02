@@ -1,0 +1,7 @@
+select
+    barbers_barber.first_name || ' ' || barbers_barber.last_name as "name",
+     barbers_barberhaircut."date",
+     count(*) as "number of hair cuts"
+from barbers_barberhaircut
+join barbers_barber on barbers_barber.barber_code = barbers_barberhaircut.barber_code_id
+group by barber_code_id, "date";
